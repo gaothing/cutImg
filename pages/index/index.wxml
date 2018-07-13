@@ -1,0 +1,20 @@
+ <view class='zhe zheleft' style='width:{{zhewidth}}px;'></view>
+<view class='zhe zheright' style='width:{{zhewidth}}px'></view>
+<view class='zhe zhetop' style='height:{{zheheigth}}px;left:{{zhewidth}}px'></view>
+<view class='zhe zhebottom' style='height:{{zheheigth}}px;left:{{zhewidth}}px;bottom:0'></view> 
+<view class='box'>
+  <movable-area style="height: 200px; width: 200px;" scale-area>
+    <movable-view style="height: 200px; width: 200px; " out-of-bounds direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="1">
+      <image style='width:100%' mode='widthFix' src='{{src}}'></image>
+    </movable-view>
+  </movable-area>
+</view>
+ <view class='box box2'>
+  <canvas style="width: 200px; height: 200px;" canvas-id="firstCanvas">
+  </canvas>
+</view> 
+  <view class='btn1' bindtap='chooseImg'>选择图片</view>  
+<view  class='btn' bindtap='cut'>剪切</view>
+<view class='imgBox' wx:if="{{src}}">
+<image mode='widthFix' src='{{src}}'></image>
+</view >
