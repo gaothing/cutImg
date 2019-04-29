@@ -22,7 +22,7 @@ page{
   position: fixed;
   z-index: 2222;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .zheleft {
@@ -44,7 +44,9 @@ page{
   width: 200px;
   bottom: 0;
 }
-
+.move{
+  margin:-50% 0 0 -50%;
+}
 canvas {
   position: fixed;
   left: 100%;
@@ -60,7 +62,9 @@ canvas {
 
 .btn {
   position: fixed;
-  right: 60rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   bottom: 60rpx;
   width: 200rpx;
   margin-top: 20rpx;
