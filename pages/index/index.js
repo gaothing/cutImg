@@ -55,7 +55,9 @@ Page({
     console.log(x, y, scale, width, height)
     // ctx.drawImage(src, -x / scale, -y / sscale, width / scale, height / scale, 0, 0, 200, 200)
     // ctx.drawImage(src, 0, 0, 50,50)
-    ctx.drawImage(src, ((100-x) / scale) / (400 / width), ((100-y) / scale) / (400 / width), 400, 400, 0, 0, (400 / width) * 400 * scale, (400 / width) * 400 * scale);
+    ctx.drawImage(src, ((100 - x) / scale) / (400 / width), ((100 - y) / scale) / (400 / width), width / (scale * 2),
+					width / (scale * 2), 0, 0, 200,
+					200);
     // ctx.drawImage(src, 125, 125, 100, 100, 125, 125, 150, 150);
 
     // ctx.drawImage(src, 80, 80, 100, 100, 250, 250, 220, 220);
